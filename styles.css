@@ -1,0 +1,105 @@
+* {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  position: absolute;
+  right: 50px;
+}
+
+#navbar ul li {
+ margin-left: 20px; 
+}
+
+
+#navbar ul li a {
+  text-decoration: none;
+  font-family: Hevetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  background-color: gray;
+  border-radius: 10%;
+}
+
+#navbar h1,
+h2 {
+
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  
+}
+
+#navbar h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+.container,
+#landing-container {
+  padding-bottom: 85px;
+}
+
+.head,
+#projects {
+  width: 75vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.project-tile,
+.cert-tile {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.cert-tile {
+  text-align: right;
+}
+
+.project-img,
+.cert-img {
+  object-fit: cover;
+  border: 2px solid black;
+  width: 75vw;
+  height: 100vh;
+  transition: text-decoration 1s ease;
+}
+
+.project-tile:hover,
+.cert-tile:hover {
+  text-decoration: underline;
+}
+
+

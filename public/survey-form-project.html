@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="device-width, initial-scale=1.0">  
+   <link rel="stylesheet" href="./survey-form-project-styles.css">
+   <title>
+    Workplace Mental Health Survey
+   </title> 
+  </head>
+  <body>
+    <h1 id="title" class="title">Workplace Mental Health Survey</h1>
+    <p id="description" class="description">Please complete the following psychological survey on Workplace Mental Health.</p>
+    <p id="disclaimer" class="disclaimer">All information provided in this survey is and will remain confidential.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" class="name">Name
+          <input id="name" type="text" placeholder="Enter your name here" required/>
+        </label>
+        <label id="email-label" class="email">Email
+          <input id="email" type="email" placeholder="Enter your email here" required/>
+        </label>
+        <label id="number-label" class="number" required>Age
+          <input id="number" type="number" class="age" min="16" max="85" placeholder="Age" required/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>How would you rate your work environment?
+          <select id="dropdown">
+            <option>Very Good</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Bad</option>
+            <option>Very Bad</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>Is your work effecting your mental health?
+        <input type="radio" name="radio" value="0"/>Yes 
+        <input type="radio" name="radio" value="1" checked/>No       
+      </fieldset>
+      <fieldset>
+          <label>How do you feel while at work? (You can choose more than one)
+            <br />
+            <br />
+            <input type="checkbox" value="2"/>Happy<br />
+          </label>
+          <label>
+            <input type="checkbox" value="3"/>Motivated<br />
+          </label>
+          <label>
+            <input type="checkbox" value="4"/>Accepted<br />
+          </label>
+          <label>
+            <input type="checkbox" value="5"/>Safe<br />
+          </label>
+          <label>
+            <input type="checkbox" value="6"/>Excited<br />
+          </label>
+          <label>
+            <input type="checkbox" value="7"/>Focused<br />
+          </label>
+          <label>
+            <input type="checkbox" value="8"/>Apathetic<br />
+          </label>
+          <label>
+            <input type="checkbox" value="9"/>Anxious<br />
+          </label>
+          <label>
+            <input type="checkbox" value="10"/>Unwelcome<br />
+          </label>
+          <label>
+            <input type="checkbox" value="11"/>Depressed<br />
+          </label>
+      </fieldset>
+      <fieldset>
+        What else can you tell us about how your work effects your mental health?
+        <br /><br /><textarea id="textarea" placeholder="What else would you like to share?"></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" class="submit"/>
+    </form>
+  </body>
+</html>

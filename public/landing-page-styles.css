@@ -1,0 +1,212 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #2b4257;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2b4257;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+#header-img {
+  
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+  /*font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #091235;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+  font-family: Bebas Neue;
+  font-size: 6vw;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 20px;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #88a9c3;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h3 {
+  font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+h2 {
+  font-size: 5vw;
+  
+}
+
+h3 {
+  font-size: 4vw;
+ 
+}
+
+h2,
+h3 {
+  padding-top: 20px;
+}
+
+.text,
+.price {
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+div {
+  padding: 10px;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #2b4257;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: white;
+  border: 1px solid #091235;
+  color: #ffffff;
+}
+
+.radio {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #091235;
+  border-color: white;
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  #header-img {
+    height: 70px;
+    width: 70px;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  #header-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  form {
+    width: 80%;
+  }
+}

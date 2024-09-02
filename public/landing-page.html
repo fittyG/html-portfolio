@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pump'd Fitness Home</title>
+    <link rel="stylesheet" href="./landing-page-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+        <img id="header-img" src="../assets/images/pumpd-fitness-logo.png" alt="logo" id="header-img">
+          <nav id="nav-bar">
+            <ul>
+              <li><a href="#pt" class="nav-link">Personal training</a></li>
+              <li><a href="#gt" class="nav-link">Group training</a></li>
+              <li><a href="#wlc" class="nav-link">28 Day Weightloss challenge</a></li>
+              <li><a href="#form" class="nav-link">Get in touch</a></li>
+            </ul>
+          </nav>
+    </header>
+      <section class="section">
+        <h1>Welcome to Pump'd Fitness!</h1>
+      <aside>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DeYk0WvTidk?si=xhBCfCEIAUApSDgz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </aside>
+    </section>
+    <section class="section">
+        <h2>About us</h2>
+      <div class="text">
+        <p>
+          Pump'd Fitness is a results driven Personal Training and Group Fitness studio dedicated to bringing affordable and effective
+          fitness and health solutions to the everyday individual. Our workouts and training programmes are challenging but appropriate
+          for your current level of fitness. Each exercise is carefully selected to ensure that you are working towards your desired goals safely 
+          and effectively.
+        </p>
+      </div>
+      <div class="heading">
+        <h3 id="pt">Personal Training</h3>
+      </div>  
+      <div class="text">
+        <p>Private and professional training sessions with an expert Personal Trainer. Includes weekly weight
+          tracking and monthly body composition assessments.
+        </p>
+      </div>
+        <div class="price">
+          <ul>
+            <legend>Monthly Pricing:</legend>
+            <li>R850 for 1 session per week</li>
+            <li>R1400 for 2 sessions per week</li>
+            <li>R1920 for 3 sessions per week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="heading">
+        <h3 id="gt">Group Training</h3>
+      </div>
+      <div class="text">
+        <p>Group fitness classess expertly programmed to get results no matter your fitness level!</p>
+      </div>
+      <div class="price">
+        <ul>
+          <legend>Monthly Pricing:</legend>
+          <li>R275 for 2 classes per week</li>
+          <li>R330 for 3 classes per week</li>
+        </ul>
+      </div>
+      <div class="heading">
+        <h3 id="wlc">28 Day Weightloss Challenge</h3>
+      </div>
+      <div class="text">
+        <p>Our notorious 28 Day Weightloss CHallenge has helped countless individuals to lose weight through easy to follow, habit building goals and challenges.</p>
+      </div>
+      <div class="price">
+        <legend>Pricing:</legend>
+       <p>R250 to enter and register</p>
+      </div>
+    </section>
+    <hr />
+    <section>
+      <h2 class="form-title">Want to reach out to us?</h2>
+      <p>Fill out the form below and we will get in touch!</p>
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <fieldset>
+          <label for="full-name">
+            Full Name
+            <input id="full-name" name="full-name" type="text" required>
+          </label>
+          <label for="email">
+            Email address
+            <input id="email" name="email" type="email" placeholder="Enter email here" required>
+          </label>
+          <label for="gender">
+            What is your gender?
+            <select id="gender" name="gender">
+              <option value="">Male</option>
+              <option value="1">Female</option>
+              <option value="2">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+        <legend>What are you interested in?</legend>  
+          <label for="personal-training">
+            <input id="personal-training" type="radio" name="personal-training" class="radio" checked>
+            Personal Training
+          </label>
+          <label for="group-training">
+            <input id="group-training" type="radio" name="group-training" class="radio">
+            Group Training
+          </label for="weight-loss-challenge">
+            <input id="weight-loss-challenge" type="radio" name="weight-loss-challenge" class="radio">
+            28 Day Challenge
+        </fieldset>
+        <fieldset>  
+          <label for="extra-info">
+            Tell us more about your fitness goals
+            <textarea id="exra-info" name="extra-info" rows="3" cols="30" placeholder="My fitness goals are..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
